@@ -22,6 +22,6 @@ class Solution:
     def minPartitions(self, n):
         result = 0
         while int(n) > 0:
-            n = ''.join([str(int(i ) -1) if int(i ) >0 else i for i in n])
+            n = ''.join([str(int(i ) -1) if int(i ) > 0 else i for i in n])
             result += 1
         return result
